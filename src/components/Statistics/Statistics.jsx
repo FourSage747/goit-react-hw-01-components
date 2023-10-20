@@ -1,8 +1,8 @@
 import css from './Statistics.module.css'
-export const Statistics = ({ data }) => {
+export const Statistics = ({ data, title}) => {
     return (
         <section className={css.statistics}>
-            <h2 className="title">Upload stats</h2>
+            <h2 className="title">{title}</h2>
 
             <ul className={css.statlist}>
                 {data.map(({ id, label, percentage }) => (

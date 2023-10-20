@@ -17,15 +17,9 @@ export const App = () => {
         padding: '50px 0'
       }}
     >
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <Profile user={user} />
 
-      <Statistics data={data} />
+      <Statistics data={data} title='Upload stats'/>
 
       <FriendList friends={friends} />
 
